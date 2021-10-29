@@ -901,7 +901,7 @@ async def _(event):
 
     if event.fwd_from:
 
-        return ko
+        return 
 
     animation_interval = 1
 
