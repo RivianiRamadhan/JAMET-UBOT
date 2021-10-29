@@ -18,9 +18,9 @@ async def gbun(event):
         return
     gbunVar = event.text
     gbunVar = gbunVar[6:]
-    mentions = f"`𝘽𝘼𝙉𝙉𝙀𝘿 SI JAMETTT INI` {DEFAULTUSER}\n"
+    mentions = f"`Warning!! User 𝙂𝘽𝘼𝙉𝙉𝙀𝘿 By` {DEFAULTUSER}\n"
     no_reason = "No Reason Given "
-    await event.edit("**Sedang 𝘽𝘼𝙉𝙉𝙀𝘿 SI JAMETT ☠️**")
+    await event.edit("**Summoning out the mighty gban hammer ☠️**")
     asyncio.sleep(3.5)
     chat = await event.get_input_chat()
     async for x in bot.iter_participants(chat, filter=ChannelParticipantsAdmins):
@@ -36,13 +36,26 @@ async def gbun(event):
         if idd == 1036951071:
             await reply_message.reply("`Wait a second, This is my master!`\n**How dare you threaten to ban my master nigger!**\n\n__Your account has been hacked! Pay 6969$ to my master__ [Heyworld](tg://user?id=1036951071) __to release your account__😏")
         else:
-            jnl = ("`MAMPUSSS!!`"
+            jnl = ("`Warning!!`"
                    "[{}](tg://user?id={})"
-                   f"` SI JAMETT SUDAH DI 𝘽𝘼𝙉𝙉𝙀𝘿 By` {DEFAULTUSER}\n\n"
-                   
+                   f"` 𝙂𝘽𝘼𝙉𝙉𝙀𝘿 By` {DEFAULTUSER}\n\n"
+                   "**Name: ** __{}__\n"
+                   "**ID : ** `{}`\n"
+                   ).format(firstname, idd, firstname, idd)
+            if usname is None:
+                jnl += "**Username: ** `Doesn't own a username!`\n"
+            elif usname != "None":
+                jnl += "**Username** : @{}\n".format(usname)
+            if len(gbunVar) > 0:
+                gbunm = "`{}`".format(gbunVar)
+                gbunr = "**Reason: **" + gbunm
+                jnl += gbunr
+            else:
+                jnl += no_reason
+            await reply_message.reply(jnl)
     else:
         mention = (
-            f"MAMPUSSS!! SI JAMETT SUDAH DI 𝘽𝘼𝙉𝙉𝙀𝘿 By {DEFAULTUSER} \nReason: No Reason Given. ")
+            f"Warning!! User 𝙂𝘽𝘼𝙉𝙉𝙀𝘿 By {DEFAULTUSER} \nReason: No Reason Given. ")
         await event.reply(mention)
     await event.delete()
 
