@@ -39,20 +39,7 @@ async def gbun(event):
             jnl = ("`MAMPUSSS!!`"
                    "[{}](tg://user?id={})"
                    f"` SI JAMETT SUDAH DI 𝘽𝘼𝙉𝙉𝙀𝘿 By` {DEFAULTUSER}\n\n"
-                   "**Name: ** __{}__\n"
-                   "**ID : ** `{}`\n"
-                   ).format(firstname, idd, firstname, idd)
-            if usname is None:
-                jnl += "**Username: ** `Doesn't own a username!`\n"
-            elif usname != "None":
-                jnl += "**Username** : @{}\n".format(usname)
-            if len(gbunVar) > 0:
-                gbunm = "`{}`".format(gbunVar)
-                gbunr = "**Reason: **" + gbunm
-                jnl += gbunr
-            else:
-                jnl += no_reason
-            await reply_message.reply(jnl)
+                   
     else:
         mention = (
             f"MAMPUSSS!! SI JAMETT SUDAH DI 𝘽𝘼𝙉𝙉𝙀𝘿 By {DEFAULTUSER} \nReason: No Reason Given. ")
