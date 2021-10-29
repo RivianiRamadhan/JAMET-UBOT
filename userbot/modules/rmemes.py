@@ -901,7 +901,7 @@ async def _(event):
 
     if event.fwd_from:
 
-        return
+        return ko
 
     animation_interval = 1
 
@@ -1177,9 +1177,8 @@ async def _(event):
             "Mutualan ig yu",
             "Nanti di follback kok",
             "Nih akun ig aku",
-            "akun gabut https://www.instagram.com/p/CQeF482jq6M/?utm_medium=copy_link   "
-        ]
-
+            "akun gabut https://www.instagram.com/p/CQeF482jq6M/?utm_medium=copy_link"]
+      
         for i in animation_ttl:
 
             await asyncio.sleep(animation_interval)
