@@ -42,7 +42,7 @@ async def gbun(event):
                   
         else
         mention = (
-            f"Warning!! User 𝙂𝘽𝘼𝙉𝙉𝙀𝘿 By {DEFAULTUSER} \nReason: No Reason Given. ")
+            f"Sedang ngeban si JAMETT INI {DEFAULTUSER} \nReason: No Reason Given. ")
         await event.reply(mention)
     await event.delete()
 
