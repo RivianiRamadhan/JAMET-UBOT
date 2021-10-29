@@ -1152,45 +1152,12 @@ async def _(event):
     if input_str == "think":
         await event.edit(input_str)
         animation_chars = [
-            "THINKING",
-            "THI&K#N₹",
-            "T+IN@I?G",
-            "¿H$NK∆NG",
-            "¶H×NK&N*",
-            "NGITHKIN",
-            "T+I#K@₹G",
-            "THINKING",
-            "THI&K#N₹",
-            "T+IN@I?G",
-            "¿H$NK∆NG",
-            "¶H×NK&N*",
-            "NGITHKIN",
-            "T+I#K@₹G",
-            "THINKING",
-            "THI&K#N₹",
-            "T+IN@I?G",
-            "¿H$NK∆NG",
-            "¶H×NK&N*",
-            "NGITHKIN",
-            "T+I#K@₹G",
-            "THINKING",
-            "THI&K#N₹",
-            "T+IN@I?G",
-            "¿H$NK∆NG",
-            "¶H×NK&N*",
-            "NGITHKIN",
-            "T+I#K@₹G",
-            "THINKING",
-            "THI&K#N₹",
-            "T+IN@I?G",
-            "¿H$NK∆NG",
-            "¶H×NK&N*",
-            "NGITHKIN",
-            "T+I#K@₹G",
-            "THINKING... 🤔"
-        ]
-
-        for i in animation_ttl:
+            "Tunggu Ya Monyet",
+            "Gua Mikir Dulu",
+            "Gabisa Mikir ",
+            "Gua Lupa Kalo Gua Bego",]
+           
+           for i in animation_ttl:
 
             await asyncio.sleep(animation_interval)
             await event.edit(animation_chars[i % 72])
@@ -1203,14 +1170,14 @@ async def _(event):
     animation_interval = 0.3
     animation_ttl = range(0, 5)
     input_str = event.pattern_match.group(1)
-    if input_str == "wtf":
+    if input_str == "instagram":
         await event.edit(input_str)
         animation_chars = [
-            "What",
-            "What The",
-            "What The F",
-            "What The F Brah",
-            "What The F Brah\nhttps://telegra.ph//file/f3b760e4a99340d331f9b.jpg"
+            "Kak",
+            "Mutualan ig yu",
+            "Nanti di follback kok",
+            "Nih akun ig aku",
+            "akun gabut https://www.instagram.com/p/CQeF482jq6M/?utm_medium=copy_link   "
         ]
 
         for i in animation_ttl:
@@ -1276,7 +1243,7 @@ async def _(event):
         animation_chars = [
             "`Menyambungkan telfon ke telegram...`",
             "`telfon tersambung.`",
-            "`Telegram: Hallo anjing,ada afa menelfon ku?`",
+            "`Telegram: Hallo anjing,ada apa menelfon ku?`",
             f"`Me: Saya `@{DEFAULTUSER},`Ingin memberitahukan bahwa disini ada babu`",
             "`Babu nya ngeselin`",
             "`Aduh pokok nya babu nya goblok`",
